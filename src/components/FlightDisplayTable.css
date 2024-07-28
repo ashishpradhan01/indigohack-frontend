@@ -1,0 +1,44 @@
+/* FlightDisplayTable.css */
+
+.flight-display-table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+.flight-display-table th,
+.flight-display-table td {
+  padding: 10px;
+  border: 1px solid yellow;
+  text-align: left;
+  font-size: 1.2em;
+}
+
+.flight-display-table th {
+  background-color: black;
+  color: yellow;
+}
+
+.flight-display-table tbody tr:nth-child(odd) {
+  background-color: #333;
+}
+
+.flight-display-table tbody tr:nth-child(even) {
+  background-color: black;
+}
+
+.status.on_time {
+  color: green;
+}
+
+.status.delayed {
+  color: red;
+}
+
+.status.cancelled {
+  color: red;
+}
+
+.status.boarding {
+  color: lime;
+}

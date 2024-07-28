@@ -1,0 +1,94 @@
+/* FlightInfoTable.css */
+
+.table-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.flight-info-table {
+  width: 80%;
+  border-collapse: separate;
+  border-spacing: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  background-color: #ffffff; /* White background for the table */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.flight-info-table th,
+.flight-info-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.flight-info-table th {
+  background-color: #34449c;
+  color: white;
+}
+
+.flight-info-table tbody tr.even {
+  background-color: #f4f4f9;
+}
+
+.flight-info-table tbody tr.odd {
+  background-color: #ffffff;
+}
+
+.flight-info-table tbody tr:hover {
+  background-color: #d1d5e9;
+  color: #333;
+  border-left: 4px solid #34449c;
+}
+
+.flight-info-table tbody tr td {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.chip {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.chip.on-time {
+  background-color: green;
+}
+
+.chip.delayed {
+  background-color: red;
+}
+
+.chip.cancelled {
+  background-color: grey;
+}
+
+.loading,
+.error {
+  margin: 20px;
+  font-size: 1.2em;
+  color: #34449c;
+}
+
+.shimmer {
+  height: 20px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 5px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
